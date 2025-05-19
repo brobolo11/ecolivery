@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-variant: small-caps;
+}
+
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+
+.custom-btn {
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.custom-input {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+.custom-input::placeholder {
+  color: lightgray;
+}
+
+.custom-input:focus {
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+  border-color: white;
+}
+
+.login-box {
+  border: 2px solid white;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}

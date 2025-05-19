@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio | Ecolivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap y estilos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <header class="d-flex justify-content-between align-items-center p-4 position-absolute top-0 start-0 end-0">
+    <h2 class="logo m-0"><img src="ecolivery2.png" alt="" width="100"><a href="index.html">Ecolivery</a></h2>
+    <button id="logoutBtn" class="btn btn-white custom-btn">CERRAR SESIÓN</button>
+  </header>
+
+  <main class="d-flex flex-column justify-content-center align-items-center text-center vh-100">
+    <h1 class="titulo text-white mb-3">Bienvenido, <span id="usuarioNombre"></span></p></h1>
+    <p class="lead text-white w-75 mb-4">Tu nueva forma de moverte por la ciudad de manera sostenible, rápida y eficiente. Comienza ya a explorar todo lo que Ecolivery tiene para ti.</p>
+
+    <div class="d-flex gap-3">
+      <a href="#" class="btn btn-white custom-btn">Ver rutas</a>
+      <a href="#" class="btn btn-white custom-btn">Mis entregas</a>
+      <a href="#" class="btn btn-white custom-btn">Perfil</a>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="home.js"></script>
+
+</body>
+</html>
