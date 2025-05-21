@@ -20,6 +20,10 @@ body {
   color: white;
 }
 
+h2.logo img{
+  width: 20%;
+}
+
 .titulo {
   font-size: 2.5rem;
   font-weight: 800;

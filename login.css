@@ -3,7 +3,8 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background-color: #000;
+  background-image: url("img/fondoLogin.jpg");
+  background-size: cover;
   height: 100vh;
   overflow: hidden;
 }
@@ -23,6 +24,10 @@ body {
 .logo a{
   text-decoration: none;
   color: white;
+}
+
+h2.logo img{
+  width: 20%;
 }
 
 .custom-btn {
@@ -65,4 +70,8 @@ body {
   border: 2px solid white;
   border-radius: 20px;
   backdrop-filter: blur(10px);
+}
+
+#loginForm input::placeholder{
+  color: white;
 }
