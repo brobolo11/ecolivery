@@ -25,6 +25,7 @@ $(document).ready(function () {
     const correo = $('input[name="correo"]').val().trim();
     const contrasena = $('input[name="contrasena"]').val().trim();
     const confirmarContrasena = $('input[name="confirmarContrasena"]').val().trim();
+    const cesta = [];
 
     if (contrasena !== confirmarContrasena) {
       showModal('Error', 'Las contraseñas no coinciden.');
@@ -35,7 +36,7 @@ $(document).ready(function () {
       url: 'register.php',
       type: 'POST',
       contentType: 'application/json',
-      data: JSON.stringify({ nombre, apellidos, correo, contrasena }),
+      data: JSON.stringify({ nombre, apellidos, correo, contrasena, cesta }),
       success: function (response) {
         showModal('Registro exitoso', '¡Te has registrado correctamente!', true);
       },

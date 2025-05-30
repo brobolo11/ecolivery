@@ -16,7 +16,8 @@ if (!$data) {
 $nombre = $data['nombre'];
 $apellidos = $data['apellidos'];
 $correo = $data['correo'];
-$contrasena = password_hash($data['contrasena'], PASSWORD_DEFAULT); // Contraseña hasheada
+$contrasena = $data['contrasena'];
+$cesta = $data['cesta'];
 
 try {
     $client = new Client('mongodb+srv://bfanvei:Lolitofernandez10@cluster0.3swo1.mongodb.net/?retryWrites=true&w=majority');
@@ -34,7 +35,8 @@ try {
         'nombre' => $nombre,
         'apellidos' => $apellidos,
         'correo' => $correo,
-        'contrasena' => $contrasena
+        'contrasena' => $contrasena,
+        'cesta' => $cesta
     ]);
 
     echo json_encode(['success' => true]);
