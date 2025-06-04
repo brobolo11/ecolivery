@@ -11,19 +11,37 @@
 </head>
 <body>
 
-  <header class="d-flex justify-content-between align-items-center px-4 position-absolute">
-        <h2 class="logo"><a href="home.html"><img src="img/logo.png" alt=""></a></h2>
-    <button id="logoutBtn" class="btn btn-white custom-btn">CERRAR SESIÓN</button>
-  </header>
+  <header class="d-flex justify-content-between align-items-center px-4 position-absolute w-100">
+    <h2 class="logo"><a href="home.html"><img src="img/logo.png" alt=""></a></h2>
+    <div class="d-flex gap-2">
+      <a id="loginBtn" href="login.html" class="btn btn-white custom-btn">INICIAR SESIÓN</a>
+      <button id="logoutBtn" class="btn btn-white custom-btn">CERRAR SESIÓN</button>
+    </div>
+</header>
+
 
   <main class="d-flex flex-column justify-content-center align-items-center text-center vh-100">
-    <h1 class="titulo text-white mb-3">Bienvenido, <span id="usuarioNombre"></span></p></h1>
-    <p class="lead text-white w-75 mb-4">Tu nueva forma de moverte por la ciudad de manera sostenible, rápida y eficiente. Comienza ya a explorar todo lo que Ecolivery tiene para ti.</p>
+    
+    <p class="titulo text-light">PIDE AHORA</p>
 
-    <div class="d-flex gap-3">
-      <a href="#" class="btn btn-white custom-btn">Ver rutas</a>
-      <a href="#" class="btn btn-white custom-btn">Mis entregas</a>
-      <a href="#" class="btn btn-white custom-btn">Perfil</a>
+    <div class="contenedorTarjetas d-flex flex-wrap justify-content-center gap-4 w-100">
+      
+      <div class="tarjeta d-flex flex-column bg-light rounded-3">
+          <img src="img/comidaRapida.webp" alt="">
+          <button id="btnHistorialPaciente" type="button" class="btn btn-light">COMIDA RAPIDA</button>
+      </div>
+      <div class="tarjeta d-flex flex-column bg-light rounded-3">
+          <img src="img/supermercado.jpg" alt="">
+          <button type="button" class="btn btn-light">SUPERMERCADO</button>
+      </div>
+      <div class="tarjeta d-flex flex-column bg-light rounded-3">
+          <img src="img/hamburguesa.jpg" alt="">
+          <button type="button" class="btn btn-light">HAMBURGUESA</button>
+      </div>
+      <div class="tarjeta d-flex flex-column bg-light rounded-3">
+          <img src="img/pizza.jpg" alt="">
+          <button type="button" class="btn btn-light">PIZZA</button>
+      </div>
     </div>
   </main>
 
